@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+	<script src="/js/jquery-3.4.1.min.js"></script>
+	<script src="/js/popper.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+    <title>Java Spring </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">IFMT</a>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Cadastro teste Java Spring</h5>
+                <form action="/titulos" method="POST">
+                    <div class="form-group row">
+                        <label for="descricao" class="col-sm-2 col-form-label">Descrição</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="descricao" name="descricao" placeholder="Descreva o produto">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="dataVencimento" class="col-sm-2 col-form-label">Data Vencimento</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="dataVencimento" name="dataVencimento">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="valor" class="col-sm-2 col-form-label">Valor R$</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="valor" name="valor">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="status" class="col-sm-2 col-form-label">Status</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="status" name="status">
+                                <option>Pendente</option>
+                                <option>Recibo</option>
+                            </select>
+                        </div>
+                    </div>
+					<button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
